@@ -23,7 +23,7 @@ input.csv = "02_data/.temp_input_markers.csv"
 output.csv = "02_data/markers_with_total_position.csv"
 
 # Load data
-data = read.csv(input.csv, header = F, col.names = c("sp","lg","pos","totpos","mname","seq"))
+data = read.csv(input.csv, header = F, col.names = c("sp","lg","pos","totpos","mname","seq"), stringsAsFactors=TRUE)
 
 # Initialize variables
 data.new = NULL
